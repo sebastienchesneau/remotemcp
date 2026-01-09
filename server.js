@@ -110,6 +110,8 @@ app.post("/mcp", async (req, res) => {
 //   console.log("POUET 3");
 // });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
   console.log("✅ MCP Server prêt sur http://localhost:3000/mcp");
 });
